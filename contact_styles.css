@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d6e6f2;
+  color: #1b4c63;
+  padding-top: 80px;
+}
+
+.navbar {
+  background-color: #427d9d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #5a91b3;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 12px;
+  max-width: 350px;
+  flex: 1 1 auto;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.05rem;
+  padding-left: 10px;
+  outline: none;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.search-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+.contact-main {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.contact-main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1b4c63;
+  margin-bottom: 60px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.profile-placeholder {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.profile-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: black;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #1a1a1a;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.email-icon {
+  width: 25px;
+  height: 23px;
+  object-fit: contain;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    max-width: 90%;
+  }
+}
