@@ -103,11 +103,11 @@ body {
 
 .about-content hr {
   border: none;
-  height: 6px; 
-  background-color: #1b4c63; 
-  width: 100%; 
-  margin: 0 auto 35px; 
-  border-radius: 4px; 
+  height: 6px;
+  background-color: #1b4c63;
+  width: 100%;
+  margin: 0 auto 35px;
+  border-radius: 4px;
 }
 
 .about-content p {
