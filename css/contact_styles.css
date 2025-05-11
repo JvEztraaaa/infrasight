@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: 16px 2vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -67,7 +67,6 @@ body {
   font-weight: bold;
   border-bottom: 2px solid transparent;
   padding: 5px 0;
-  font-size: 18px;
 }
 
 .nav-links a:hover,
