@@ -38,6 +38,7 @@ main {
   padding: 16px 2vw;
   width: 100%;
   flex-wrap: wrap;
+  z-index: 10;
   position: absolute;
 }
 
