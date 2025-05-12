@@ -99,6 +99,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 h1 {
@@ -111,7 +113,6 @@ h1 {
 }
 
 .action-button {
-  width: 100%;
   max-width: 300px;
   background-color: #427d9d;
   color: white;
@@ -123,6 +124,10 @@ h1 {
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
   box-sizing: border-box;
+  margin-bottom: 0;
+  line-height: 1.2;
+  display: inline-block;
+  text-align: center;
 }
 
 .action-button:hover,
@@ -132,6 +137,55 @@ h1 {
   text-decoration-color: white;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  font-size: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #427d9d;
+  min-width: 100%;
+  max-width: 300px;
+  z-index: 1;
+  top: 100%; /* aligns exactly to the bottom of the button */
+  left: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 0; /* Make sure no margin */
+  padding: 0; /* Ensure padding doesn't cause the gap */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #427d9d;
+  border-bottom: 1px solid #2c6585;
+}
+
+.dropdown-content a:hover {
+  background-color: #2c6585;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 768px) {
