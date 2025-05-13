@@ -88,11 +88,10 @@ main {
 }
 
 .campus-map {
-  max-width: 500px; /* Increased from 350px */
-  width: 90%;
+  max-width: 500px;
+  width: 100%;
   height: auto;
 }
-
 
 .text-content {
   display: flex;
