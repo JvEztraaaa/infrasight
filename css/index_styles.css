@@ -12,13 +12,40 @@ body {
 }
 
 main {
-  height: 100dvh;
-  background: url("placeholder.jpg") no-repeat center center/cover;
   position: relative;
+  height: 100dvh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/bg_cavsu.jpg") no-repeat center center / cover;
+  filter: grayscale(100%);
+  background-size: cover;
+  opacity: 0.75;
   z-index: 1;
 }
 
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+  z-index: 2;
+}
+
 .overlay {
+  position: relative;
+  z-index: 3;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -26,8 +53,6 @@ main {
   align-items: center;
   text-align: center;
   padding: 20px;
-  position: relative;
-  z-index: 2;
 }
 
 .navbar {
@@ -93,7 +118,7 @@ main {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   color: #1b4c63;
   font-weight: bold;
   margin-bottom: 20px;

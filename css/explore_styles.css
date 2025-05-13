@@ -83,16 +83,16 @@ main {
   gap: 50px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
 }
 
 .campus-map {
-  max-width: 350px;
-  width: 100%;
+  max-width: 500px; /* Increased from 350px */
+  width: 90%;
   height: auto;
-  border: 2px solid #333;
 }
+
 
 .text-content {
   display: flex;
