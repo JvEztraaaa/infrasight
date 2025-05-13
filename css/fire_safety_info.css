@@ -84,6 +84,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 90vh;
+  
 }
 
 .building-box {
@@ -92,6 +93,12 @@ main {
   justify-content: center;
   min-width: 100%;
   gap: 5%;
+}
+
+h1{
+  font-size: 40px;
+  color: #1b4c63;
+  line-height: 3;
 }
 
 .building-image {
@@ -109,7 +116,19 @@ main {
   align-items: start;
   font-size: 20px ;
   line-height: 1.5;
-  min-width: 50%;
+}
+
+.building-info {
+  margin: 40px auto;
+  max-width: 60vw;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.65), rgba(215, 240, 253, 0.95));
+ 
+  border-radius: 20px;
+  padding: 30px;
+  color: #333;
 }
 
 .building-box2 {
@@ -117,15 +136,7 @@ main {
   flex-direction: column;
   align-items: center;
   min-width: 100%;
-  
   margin-top: 150px;
-}
-
-.building-info {
-  margin-top: 40px;
-  max-width: 40vw;
-  font-size: 20px;
-  text-align: justify;
 }
 
 .table-container {
