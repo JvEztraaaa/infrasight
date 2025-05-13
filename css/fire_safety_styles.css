@@ -90,11 +90,12 @@ main {
 }
 
 .building-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 .building-box {
@@ -106,7 +107,8 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  height: 220px;
+  height: 280px;
+  width: 300px;
 }
 
 .building-box img {
