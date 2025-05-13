@@ -73,7 +73,6 @@ main {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   min-height: 90vh;
 }
 
@@ -82,7 +81,7 @@ main {
   flex-direction: row;
   gap: 100px;
   flex-wrap: nowrap;
-  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
 }
@@ -95,18 +94,20 @@ main {
 
 .building-list {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .building-list h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: #1b4c63;
 }
 
 .blue-star {
   color: blue;
   font-size: 1.8rem;
-  margin-right: 8px;
 }
 
 .building-list ul {
