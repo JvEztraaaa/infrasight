@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #d7f0fd;
   color: #333;
 }
@@ -18,7 +18,6 @@ body {
   padding: 16px 2vw;
   width: 100%;
   flex-wrap: wrap;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-box {
@@ -27,14 +26,9 @@ body {
   background-color: #5a91b3;
   color: white;
   border-radius: 30px;
-  padding: 8px 15px;
+  padding: 4px 8px;
   flex: 1 1 auto;
   max-width: 350px;
-  transition: box-shadow 0.3s;
-}
-
-.search-box:focus-within {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
 
 .search-box input {
@@ -70,7 +64,6 @@ body {
   font-weight: bold;
   border-bottom: 2px solid transparent;
   padding: 5px 0;
-  transition: border-color 0.3s;
 }
 
 .nav-links a:hover {
@@ -85,6 +78,7 @@ body {
   min-height: 24vh;
   background: linear-gradient(to right, #e4f4fd, #c6e4f3);
   overflow: hidden;
+  filter: brightness(75%);
 }
 
 .building-cover img {
@@ -146,27 +140,28 @@ h1 {
 
 /* container for p and building info */
 .building-sum {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 span {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
-.audit-link {
+.link {
   color: #007bff;
   text-decoration: none;
   font-weight: 600;
   position: relative;
 }
 
-.audit-link::after {
+.link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -179,13 +174,13 @@ span {
   transition: transform 0.3s ease;
 }
 
-.audit-link:hover::after {
+.link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
 .building-info {
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 30vw;
   font-size: 18px;
   line-height: 1.6;
@@ -209,11 +204,12 @@ span {
 
 /* container for table and table header*/
 .building-box2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
 .table-container {
@@ -222,7 +218,7 @@ span {
   justify-content: center;
   width: 100%;
   font-size: 25px;
-  padding: 40px 20px 20px;
+  padding: 0px 20px 100px;
 }
 
 table {
@@ -299,10 +295,10 @@ tr:hover td {
   justify-content: center;
   background-color: #b3ddee;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0 5px #b3ddee, 0 6px 12px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   height: 50vh;
-  padding: 5px;
+  padding: 0;
   transition: transform 0.3s ease;
 }
 
@@ -311,8 +307,6 @@ tr:hover td {
   object-position: center center;
   width: 100%;
   height: 100%;
-
-  border-radius: 12px;
 }
 
 .document-photo:hover {
