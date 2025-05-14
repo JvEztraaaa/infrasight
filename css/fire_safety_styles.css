@@ -99,7 +99,7 @@ main {
 }
 
 .building-gallery a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .building-box {
@@ -117,7 +117,7 @@ main {
 
 .building-box img {
   width: 100%;
-  height: 100%;
+  height: 240px;
   object-fit: cover;
   background-color: #f0f0f0;
 }
@@ -130,7 +130,8 @@ main {
   width: 100%;
   text-align: center;
   font-size: 1rem;
-  margin: 0;
+  height: 45px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
