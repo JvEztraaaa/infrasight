@@ -209,7 +209,7 @@ span {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .table-container {
@@ -218,7 +218,7 @@ span {
   justify-content: center;
   width: 100%;
   font-size: 25px;
-  padding: 0px 20px 100px;
+  padding: 0px 20px 5px;
 }
 
 table {
@@ -281,25 +281,29 @@ tr:hover td {
 
 /* grid container */
 .documentation-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   width: 100%;
   padding: 40px 90px 10px;
+  margin-bottom: 50px;
 }
 
 /* container of image */
 .document-photo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1 1 22%;
+  max-width: 22%;
+  min-width: 200px;
+  height: 50vh;
   background-color: #b3ddee;
   border-radius: 12px;
   box-shadow: 0 0 0 5px #b3ddee, 0 6px 12px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  height: 50vh;
-  padding: 0;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .document-photo img {
@@ -339,7 +343,7 @@ tr:hover td {
   border: 1px solid #b3ddee;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .recommendation-container:hover {
