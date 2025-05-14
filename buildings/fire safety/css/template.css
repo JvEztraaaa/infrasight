@@ -285,7 +285,7 @@ tr:hover td {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 7%;
   width: 100%;
-  padding: 40px 90px 90px;
+  padding: 40px 90px 10px;
 }
 
 /* container of image */
@@ -321,6 +321,29 @@ tr:hover td {
 .no {
   color: red;
   font-weight: bold;
+}
+
+.recommendation-container {
+  max-width: 40%;
+  background: linear-gradient(
+    to top,
+    rgba(240, 248, 255, 0.95),
+    rgba(178, 224, 248, 0.9)
+  );
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #333;
+  border: 1px solid #b3ddee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 120px;
+}
+
+.recommendation-container:hover {
+  transform: translateY(-4px);
 }
 
 @media (max-width: 1024px) {
