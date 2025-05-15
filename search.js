@@ -99,7 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
       div.classList.add("result-item");
       div.textContent = match.name;
       div.addEventListener("click", () => {
-        window.location.href = match.url;
+        const basePath = location.pathname.includes("/buildings/")
+          ? "../../"
+          : "./";
+        window.location.href = basePath + match.url;
       });
       resultBox.appendChild(div);
     });
