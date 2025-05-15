@@ -15,8 +15,14 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
 
         <nav class="nav-links">
@@ -298,5 +304,6 @@
 
     <!-- Lightbox2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="../../search.js"></script>
   </body>
 </html>
