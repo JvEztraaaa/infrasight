@@ -11,8 +11,14 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
@@ -27,12 +33,27 @@
         <img src="images/map_not_vulnerable.png" alt="Campus Map" class="map" />
 
         <div class="building-list">
-          <h2><span class="blue-star">★</span> Buildings Not Vulnerable to Earthquake</h2>
+          <h2>
+            <span class="blue-star">★</span> Buildings Not Vulnerable to
+            Earthquake
+          </h2>
           <ul>
             <!-- Clickable -->
-            <li><a href="buildings/infrastructure audit/ITC Building.html">ITC Building</a></li>
-            <li><a href="buildings/infrastructure audit/Languages.html">Languages and Humanities Building (CAS)</a></li>
-            <li><a href="buildings/infrastructure audit/CCJ.html">College of Criminal Justice (CCJ)</a></li>
+            <li>
+              <a href="buildings/infrastructure audit/ITC Building.html"
+                >ITC Building</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/Languages.html"
+                >Languages and Humanities Building (CAS)</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/CCJ.html"
+                >College of Criminal Justice (CCJ)</a
+              >
+            </li>
             <!-- Not Clickable -->
             <li><a href="#">CEMDS Building</a></li>
             <li><a href="#">Graduate School and Open Learning College</a></li>
@@ -41,5 +62,6 @@
         </div>
       </div>
     </main>
+    <script src="search.js"></script>
   </body>
 </html>

@@ -11,8 +11,14 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
@@ -32,13 +38,35 @@
           </h2>
           <ul>
             <!-- Clickable -->
-            <li><a href="buildings/infrastructure audit/DIET.html">Engineering Science Building (DIET)</a></li>
-            <li><a href="buildings/infrastructure audit/Biological Sciences.html">Biological Sciences Building</a></li>
-            <li><a href="buildings/infrastructure audit/Physical Science.html">Physical Science Building</a></li>
-            <li><a href="buildings/infrastructure audit/Research.html">Interdisciplinary Research Building</a></li>
-            <li><a href="buildings/infrastructure audit/International House.html">International House 1</a></li>
+            <li>
+              <a href="buildings/infrastructure audit/DIET.html"
+                >Engineering Science Building (DIET)</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/Biological Sciences.html"
+                >Biological Sciences Building</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/Physical Science.html"
+                >Physical Science Building</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/Research.html"
+                >Interdisciplinary Research Building</a
+              >
+            </li>
+            <li>
+              <a href="buildings/infrastructure audit/International House.html"
+                >International House 1</a
+              >
+            </li>
             <!-- Not Clickable -->
-            <li><a href="#">College of Information and Technology (CEIT)</a></li>
+            <li>
+              <a href="#">College of Information and Technology (CEIT)</a>
+            </li>
             <li><a href="#">Agricultural Science Building (CAFENR)</a></li>
             <li><a href="#">Crop Science Building</a></li>
             <li><a href="#">Animal Science Building</a></li>
@@ -56,5 +84,6 @@
         </div>
       </div>
     </main>
+    <script src="search.js"></script>
   </body>
 </html>
