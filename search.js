@@ -24,6 +24,10 @@ const searchData = [
     url: "buildings/fire safety/CCJ.html",
   },
   {
+    name: "CEIT | Infrastructure Audit",
+    url: "buildings/infrastructure audit/CEIT.html",
+  },
+  {
     name: "CEIT | Fire Safety Inspection",
     url: "buildings/fire safety/CEIT.html",
   },
@@ -66,6 +70,10 @@ const searchData = [
   {
     name: "Interdisciplinary Research Bldg | Fire Safety Inspection",
     url: "buildings/fire safety/Research.html",
+  },
+  {
+    name: "University Library | Infrastructure Audit",
+    url: "buildings/infrastructure audit/University Library.html",
   },
   {
     name: "University Library | Fire Safety Inspection",
