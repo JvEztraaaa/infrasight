@@ -11,8 +11,14 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
@@ -27,7 +33,8 @@
         <img
           src="images/map_main.png"
           alt="Cavite State University Campus Map"
-          class="campus-map"/>
+          class="campus-map"
+        />
 
         <div class="text-content">
           <h1>Cavite State University - Main Campus</h1>
@@ -39,10 +46,13 @@
                 <a href="infra_not_vulnerable.html">Not Vulnerable</a>
               </div>
             </div>
-            <a href="fire_safety.html" class="action-button">Fire Safety Inspection</a>
+            <a href="fire_safety.html" class="action-button"
+              >Fire Safety Inspection</a
+            >
           </div>
         </div>
       </div>
     </main>
+    <script src="search.js"></script>
   </body>
 </html>

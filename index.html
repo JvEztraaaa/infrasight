@@ -11,9 +11,16 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
+
         <nav class="nav-links">
           <a href="#">Home</a>
           <a href="about.html">About</a>
@@ -28,5 +35,6 @@
         <a href="explore.html" class="explore-btn">Explore</a>
       </div>
     </main>
+    <script src="search.js"></script>
   </body>
 </html>

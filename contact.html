@@ -11,8 +11,14 @@
     <header>
       <div class="navbar">
         <div class="search-box">
-          <input type="text" placeholder="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="off"
+          />
           <span class="search-icon">🔍</span>
+          <div id="searchResults" class="search-results"></div>
         </div>
         <nav class="nav-links">
           <a href="index.html">Home</a>
@@ -27,13 +33,16 @@
       <div class="contact-grid">
         <div class="contact-card">
           <div class="profile-placeholder">
-            <img
-              src="images/prof_kelly.png"alt="Gian Kelly S. Alibangbang" />
+            <img src="images/prof_kelly.png" alt="Gian Kelly S. Alibangbang" />
           </div>
           <h2>ALIBANGBANG, GIAN KELLY S.</h2>
           <p>
-             <img class="email-icon" src="images/icon_email.png" alt="Email Icon" />
-             giankelly.alibangbang@cvsu.edu.ph
+            <img
+              class="email-icon"
+              src="images/icon_email.png"
+              alt="Email Icon"
+            />
+            giankelly.alibangbang@cvsu.edu.ph
           </p>
         </div>
 
@@ -43,7 +52,11 @@
           </div>
           <h2>CAMPOSO, LADY THEA G.</h2>
           <p>
-            <img class="email-icon" src="images/icon_email.png" alt="Email Icon" />
+            <img
+              class="email-icon"
+              src="images/icon_email.png"
+              alt="Email Icon"
+            />
             ladythea.camposo@cvsu.edu.ph
           </p>
         </div>
@@ -54,11 +67,16 @@
           </div>
           <h2>MENDOZA, BEN EDWARD E.</h2>
           <p>
-            <img class="email-icon" src="images/icon_email.png" alt="Email Icon" />
+            <img
+              class="email-icon"
+              src="images/icon_email.png"
+              alt="Email Icon"
+            />
             main.benedward.mendoza@cvsu.edu.ph
           </p>
         </div>
       </div>
     </main>
+    <script src="search.js"></script>
   </body>
 </html>
