@@ -16,10 +16,10 @@ body {
 }
 
 #map-container {
-  height: calc(100vh - 70px); 
+  height: calc(100vh - 70px);
   width: 100%;
   position: relative;
-  top: 70px; 
+  top: 70px;
 }
 
 #map {
@@ -118,7 +118,6 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Map Marker Styles */
 .custom-label {
   text-align: center;
   font-size: 10px;
@@ -139,4 +138,87 @@ body {
   flex-direction: column;
   align-items: center;
   transform: translateY(-10px);
+}
+
+.popup-box {
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  max-width: 250px;
+}
+
+.popup-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #1b4c63;
+}
+
+.popup-box p {
+  margin: 0;
+}
+
+.view-details-link {
+  color: #0d6efd;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.view-details-link:hover {
+  color: #063b94;
+}
+
+.custom-div-icon {
+  text-align: center;
+}
+
+.marker-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-box {
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.popup-box h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.view-details-link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.leaflet-control-zoom .leaflet-control-zoom-in,
+.leaflet-control-zoom .leaflet-control-zoom-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding: 22px;
+}
+
+.custom-toggle-btn {
+  width: 43px;
+  height: 43px;
+  background: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-toggle-btn:hover {
+  background: #f0f0f0;
 }
