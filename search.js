@@ -1,85 +1,32 @@
-const searchData = [
-  {
-    name: "Biological Science Bldg. | Infrastructure Audit",
-    url: "buildings/infrastructure audit/Biological Sciences.html",
-  },
-  {
-    name: "Biological Science Bldg. | Fire Safety Inspection",
-    url: "buildings/fire safety/Biological Sciences.html",
-  },
-  {
-    name: "CAS | Infrastructure Audit",
-    url: "buildings/infrastructure audit/Languages.html",
-  },
-  {
-    name: "CAS | Fire Safety Inspection",
-    url: "buildings/fire safety/Languages.html",
-  },
-  {
-    name: "CCJ | Infrastructure Audit",
-    url: "buildings/infrastructure audit/CCJ.html",
-  },
-  {
-    name: "CCJ | Fire Safety Inspection",
-    url: "buildings/fire safety/CCJ.html",
-  },
-  {
-    name: "CEIT | Infrastructure Audit",
-    url: "buildings/infrastructure audit/CEIT.html",
-  },
-  {
-    name: "CEIT | Fire Safety Inspection",
-    url: "buildings/fire safety/CEIT.html",
-  },
-  {
-    name: "DIET | Infrastructure Audit",
-    url: "buildings/infrastructure audit/DIET.html",
-  },
-  {
-    name: "DIET | Fire Safety Inspection",
-    url: "buildings/fire safety/DIET.html",
-  },
-  {
-    name: "International House 1 | Infrastructure Audit",
-    url: "buildings/infrastructure audit/International House.html",
-  },
-  {
-    name: "International House 1 | Fire Safety Inspection",
-    url: "buildings/fire safety/International House.html",
-  },
-  {
-    name: "ITC Bldg. | Infrastructure Audit",
-    url: "buildings/infrastructure audit/ITC Building.html",
-  },
-  {
-    name: "ITC Bldg. | Fire Safety Inspection",
-    url: "buildings/fire safety/ITC Building.html",
-  },
-  {
-    name: "Physical Science Bldg | Infrastructure Audit",
-    url: "buildings/infrastructure audit/Physical Science.html",
-  },
-  {
-    name: "Physical Science Bldg | Fire Safety Inspection",
-    url: "buildings/fire safety/Physical Science.html",
-  },
-  {
-    name: "Interdisciplinary Research Bldg | Infrastructure Audit",
-    url: "buildings/infrastructure audit/Research.html",
-  },
-  {
-    name: "Interdisciplinary Research Bldg | Fire Safety Inspection",
-    url: "buildings/fire safety/Research.html",
-  },
-  {
-    name: "University Library | Infrastructure Audit",
-    url: "buildings/infrastructure audit/University Library.html",
-  },
-  {
-    name: "University Library | Fire Safety Inspection",
-    url: "buildings/fire safety/University Library.html",
-  },
-];
+const searchData = [];
+
+// Determine the correct path to buildings.json based on the current page's URL
+let buildingsJsonPath = 'data/buildings.json';
+// Check if the current URL contains '/buildings/' (or any other subdirectory where search.js might be loaded from)
+if (window.location.pathname.includes('/buildings/')) {
+    buildingsJsonPath = '../data/buildings.json';
+}
+
+fetch(buildingsJsonPath)
+  .then(response => {
+    if (!response.ok) {
+      // Throw an error if the HTTP status is not successful (e.g., 404, 500)
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(buildings => {
+    buildings.forEach(building => {
+      building.audits.forEach(audit => {
+        searchData.push({
+          name: `${building.name} | ${audit.type}`,
+          buildingId: building.id,
+          auditType: audit.type
+        });
+      });
+    });
+  })
+  .catch(error => console.error('Error loading building data:', error));
 
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.querySelector(".search-box input");
@@ -107,10 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
       div.classList.add("result-item");
       div.textContent = match.name;
       div.addEventListener("click", () => {
-        const basePath = location.pathname.includes("/buildings/")
-          ? "../../"
-          : "./";
-        window.location.href = basePath + match.url;
+        // Construct the URL for the new building_detail.html
+        const url = `buildings/building_detail.html?id=${match.buildingId}&type=${encodeURIComponent(match.auditType)}`;
+        window.location.href = url;
       });
       resultBox.appendChild(div);
     });

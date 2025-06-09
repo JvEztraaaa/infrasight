@@ -22,68 +22,30 @@ L.tileLayer(
 
 // Building markers
 const buildings = [
-  {
-    name: "Engineering Science Building (DIET)",
-    coord: [14.200041966261358, 120.87986319819585],
-  },
-  {
-    name: "Biological Sciences Building",
-    coord: [14.200405318817777, 120.88250153479166],
-  },
-  {
-    name: "Physical Science Building",
-    coord: [14.200005821121971, 120.88290038246578],
-  },
-  {
-    name: "Interdisciplinary Research Building",
-    coord: [14.199717037479397, 120.88320898775572],
-  },
-  { name: "International House 1", coord: [14.1983, 120.8817] },
-  {
-    name: "College of Information and Technology (CEIT)",
-    coord: [14.199326552749044, 120.88066992557255],
-  },
-  {
-    name: "University Library",
-    coord: [14.199322573051465, 120.88234524368683],
-  },
-  {
-    name: "Agricultural Science Building (CAFENR)",
-    coord: [14.199086203513206, 120.88277033438736],
-  },
-  { name: "Crop Science Building", coord: [14.1977, 120.8824] },
-  {
-    name: "Animal Science Building",
-    coord: [14.202795569586902, 120.88205936288706],
-  },
-  {
-    name: "Veterinary Medicine Classroom (CVMBS)",
-    coord: [14.202646874698718, 120.88185012363537],
-  },
-  {
-    name: "Veterinary Hospital",
-    coord: [14.202867510965532, 120.88152770023797],
-  },
-  { name: "Old CEMDS Building", coord: [14.1974, 120.8812] },
-  {
-    name: "Human Kinetics Building (Gymnasium)",
-    coord: [14.197187127184952, 120.88252487319905],
-  },
-  {
-    name: "College of Education Research Center Building",
-    coord: [14.199342270872908, 120.88025113731037],
-  },
+  { name: "Engineering Science Building (DIET)",coord: [14.200172, 120.879843],},
+  { name: "Biological Sciences Building",coord: [14.200405318817777, 120.88250153479166],},
+  { name: "Physical Science Building",coord: [14.200005821121971, 120.88290038246578],},
+  { name: "Interdisciplinary Research Building",coord: [14.199717037479397, 120.88320898775572],},
+  { name: "International House 1", coord: [14.2000044,120.88265] },
+  { name: "College of Information and Technology (CEIT)",coord: [14.1994407,120.8806493],},
+  { name: "University Library",coord: [14.199322573051465, 120.88234524368683],},
+  { name: "Agricultural Science Building (CAFENR)",coord: [14.199086203513206, 120.88277033438736],},
+  { name: "Crop Science Building", coord: [14.198955, 120.882381] },
+  { name: "Animal Science Building",coord: [14.2027737,120.8820042],},
+  { name: "Veterinary Medicine Classroom (CVMBS)",coord: [14.202646874698718, 120.88185012363537],},
+  { name: "Veterinary Hospital",coord: [14.2028316,120.8815563],},
+  { name: "Old CEMDS Building", coord: [14.1999226,120.8813103] },
+  { name: "Human Kinetics Building (Gymnasium)", coord: [14.197187127184952, 120.88252487319905],},
+  { name: "College of Education", coord: [14.19885,120.8802473],},
+  { name: "Research Center Building", coord: [14.1995625,120.8826593]},
   { name: "International House 2", coord: [14.1968, 120.8821] },
   { name: "OSAS Building", coord: [14.197, 120.8824] },
   { name: "ITC Building", coord: [14.199508571067673, 120.88068601882696] },
   { name: "Languages & Humanities Building (CAS)", coord: [14.1976, 120.8829] },
   { name: "College of Criminal Justice (CCJ)", coord: [14.1979, 120.8831] },
   { name: "CEMDS Building", coord: [14.19909349775188, 120.88304345244829] },
-  {
-    name: "Graduate School & Open Learning College",
-    coord: [14.1985, 120.8835],
-  },
-  { name: "Bahay ng Alumni", coord: [14.1988, 120.8837] },
+  { name: "Graduate School & Open Learning College",coord: [14.1985, 120.8835],},
+  { name: "Bahay ng Alumni", coord: [14.1970936,120.8828955] },
 ];
 
 // Custom markers with labels under icons
