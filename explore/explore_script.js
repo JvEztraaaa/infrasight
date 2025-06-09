@@ -64,12 +64,12 @@ buildings.forEach((b) => {
     iconAnchor: [15, 42],
   });
 
-  const popupContent = `
-    <div class="popup-box">
-      <h3>${b.name}</h3>
-      <p><a href="#" class="view-details-link">View Details</a></p>
-    </div>
-  `;
+const popupContent = `
+  <div class="popup-box">
+    <h3>${b.name}</h3>
+    <p><a href="../overview/overview.html?name=${encodeURIComponent(b.name)}" class="view-details-link">View Details</a></p>
+  </div>
+`;
 
   L.marker(b.coord, { icon: customIcon })
     .addTo(map)
