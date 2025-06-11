@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(University\ Library.jpg) no-repeat center center / cover;
+  background-size: cover;
+}
+.icon{
+  width: 8%;
+}
+.back-button{
+  margin-top: 40px;
+  margin-left: 100px;
+  border: none;
+  border-width: 1px;
+  padding: 10px;
+  width: 10%;
+  border-radius: 10px;
+  background-color:#c0e0f1;
+  font-weight: bold;
+  font-size: .9rem;
+  box-shadow: 0 0 10px;
+  transition: box-shadow 0.15s;
+}
+.back-button:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) ;
+}
+.back-button:active{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+.header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #c0e0f1;
+  width: 33%;
+  border-radius: 20px;
+  justify-content: center;
+  margin: 5% auto;
+  height: 80px;
+  gap: 50px;
+  font-family: Arial;
+  color: #2c6585;
+}
+.description-container{
+  display: flex;
+  background-color: rgba(192, 224, 241, 0.781);
+  justify-content: center;
+  width: 50%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+td{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+.inspection-container {
+  background-color: #427d9d;
+  color: white;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.inspection-name {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.image-container {
+  width: 40px;
+  height: 40px;
+  background-color: white; 
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+#recommendation-container{
+  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+}
+#recommendation-container h1{
+  margin: 4.5%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 2.5rem;
+}
+.recommendations {
+  background-color: #427d9d;
+  width: 80%;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 1%;
+}
+
+.descriptions {
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+.documentation-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(192, 224, 241, 0.781);
+  border-radius: 30px;
+  padding: 30px 20px;
+  width: 50%;
+  margin: 5% auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.documentation-container h1 {
+  grid-column: 1 / -1;
+  margin: 2%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 2.5rem;
+}
+
+.doc-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: white;
+}
