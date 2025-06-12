@@ -107,7 +107,7 @@ body {
 
 .back-btn {
   padding: 10px 20px;
-  background-color: #e6f3fb;
+  background-color: rgb(221, 242, 253);
   border: none;
   border-radius: 20px;
   font-size: inherit;
@@ -141,7 +141,7 @@ body {
 .nav-panel-card {
   display: flex;
   height: 100px;
-  background-color: #e6f3fb;
+  background-color: rgb(221, 242, 253);
   padding: 20px;
   border-radius: 35px;
   text-align: center;
@@ -178,7 +178,7 @@ body {
 }
 
 .overview-panel {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(221, 242, 253, 0.7);
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 0;
