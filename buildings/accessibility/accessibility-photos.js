@@ -1,38 +1,37 @@
 // Mapping of building names to their documentation photo filenames
 const documentationPhotos = {
-  "(CAFENR) Agricultural Science": [
+  "Agricultural Science Building (CAFENR)": [
     "IMG_5947.JPG",
     "IMG_5948.JPG",
     "IMG_5949.JPG"
   ],
-  "(CAS) Languages and Humanities Building": [
-    "IMG_3979.HEIC",
-    "IMG_3986.HEIC",
-    "IMG_3989.HEIC",
-    "IMG_3990.HEIC",
-    "IMG_3991.HEIC"
+  "Languages & Humanities Building (CAS)": [
+    "IMG_3979.jpg",
+    "IMG_3986.jpg",
+    "IMG_3989.jpg",
+    "IMG_3990.jpg",
+    "IMG_3991.jpg"
   ],
-  "(CEIT) College of Engineering and Information Technology": [
-    "IMG_3233.HEIC"
+  "College of Information and Technology (CEIT)": [
+    "IMG_3233.jpg"
   ],
-  "(CVMBS) Veterinary School": [
-    "IMG_3801.HEIC",
-    "IMG_3802.HEIC",
-    "IMG_3809.HEIC"
+  "Veterinary Medicine Classroom (CVMBS)": [
+    "IMG_3801.jpg",
+    "IMG_3802.jpg",
+    "IMG_3809.jpg"
   ],
-  "(DIET) Engineering Building": [
-    "IMG_3156.HEIC",
-    "IMG_3157.HEIC",
-    "IMG_3170.HEIC"
+  "Engineering Building": [
+    "IMG_3156.jpg",
+    "IMG_3157.jpg",
+    "IMG_3170.jpg"
   ],
-  "Animal Science": [
-    "IMG_4238.HEIC",
-    "IMG_4245.HEIC",
-    "IMG_4247.HEIC",
-    "IMG_4248.HEIC",
-    "IMG_4250.HEIC",
-    "IMG_4254.HEIC",
-    "IMG_5142.JPG"
+  "Animal Science Building": [
+    "IMG_4238.jpg",
+    "IMG_4245.jpg",
+    "IMG_4247.jpg",
+    "IMG_4248.jpg",
+    "IMG_4250.jpg",
+    "IMG_4254.jpg"
   ],
   "Bahay ng Alumni": [
     "IMG_5966.JPG",
@@ -40,100 +39,101 @@ const documentationPhotos = {
     "IMG_5968.JPG",
     "IMG_5969.JPG"
   ],
-  "Biological Sciences": [
-    "IMG_4035.HEIC",
-    "IMG_4040.HEIC",
-    "IMG_4041.HEIC"
+  "Biological Sciences Building": [
+    "IMG_4035.jpg",
+    "IMG_4040.jpg",
+    "IMG_4041.jpg"
   ],
-  "CCJ College of Criminal Justice": [
-    "IMG_2572.HEIC",
-    "IMG_2583.HEIC",
-    "IMG_2586.HEIC",
-    "IMG_2598.HEIC"
+  "College of Criminal Justice (CCJ)": [
+    "IMG_2572.jpg",
+    "IMG_2583.jpg",
+    "IMG_2586.jpg",
+    "IMG_2598.jpg"
   ],
   "College of Education": [
-    "IMG_3948.HEIC",
-    "IMG_3956.HEIC",
-    "IMG_3957.HEIC",
-    "IMG_3958.HEIC"
+    "IMG_3948.jpg",
+    "IMG_3956.jpg",
+    "IMG_3957.jpg",
+    "IMG_3958.jpg"
   ],
-  "Crop Science": [
+  "Crop Science Building": [
     "IMG_5944.JPG",
     "IMG_5945.JPG",
     "IMG_5946.JPG"
   ],
-  "Engineering Science": [
-    "IMG_3146.HEIC"
+  "Engineering Science Building": [
+    "IMG_3146.jpg"
   ],
-  "Human Kinetics (Gymnasium)": [
+  "Human Kinetics Building (Gymnasium)": [
     "IMG_5960.JPG",
     "IMG_5961.JPG"
   ],
-  "Inter Research": [
-    "IMG_4256.HEIC",
-    "IMG_4268.HEIC",
-    "IMG_4281.HEIC"
+  "Interdisciplinary Research Building": [
+    "IMG_4256.jpg",
+    "IMG_4268.jpg",
+    "IMG_4281.jpg"
   ],
   "International House 1": [
-    "IMG_4509.HEIC",
-    "IMG_4527.HEIC",
+    "IMG_4509.jpg",
+    "IMG_4527.jpg",
     "IMG_5151.JPG"
   ],
   "International House 2": [
-    "IMG_4540.HEIC",
-    "IMG_4554.HEIC"
+    "IMG_4554.jpg",
+    "IMG_4540.jpg"
   ],
   "ITC Building": [
-    "IMG_3172.HEIC",
-    "IMG_3176.HEIC",
-    "IMG_3177.HEIC",
-    "IMG_3178.HEIC",
-    "IMG_3196.HEIC"
+    "IMG_3172.jpg",
+    "IMG_3176.jpg",
+    "IMG_3177.jpg",
+    "IMG_3178.jpg",
+    "IMG_3196.jpg"
   ],
-  "NCRDEC (Coffee Center)": [
+  "NCRDEC Building (Coffee Center)": [
     "IMG_5952.JPG",
     "IMG_5953.JPG"
   ],
-  "New CEMDS Building": [
-    "IMG_3709.HEIC",
-    "IMG_3736.HEIC",
-    "IMG_3738.HEIC",
-    "IMG_3742.HEIC",
-    "IMG_3746.HEIC"
+  "CEMDS Building": [
+    "IMG_3709.jpg",
+    "IMG_3736.jpg",
+    "IMG_3738.jpg",
+    "IMG_3742.jpg",
+    "IMG_3746.jpg"
   ],
-  "New OGS Building (Grad School)": [
-    "IMG_3777.HEIC",
-    "IMG_3780.HEIC",
-    "IMG_3784.HEIC"
+  "Graduate School & Open Learning College": [
+    "IMG_3777.jpg",
+    "IMG_3780.jpg",
+    "IMG_3784.jpg"
   ],
-  "Old CEMDS": [
-    "IMG_4206.HEIC",
-    "IMG_4213.HEIC",
-    "IMG_4216.HEIC",
-    "IMG_4217.HEIC",
-    "IMG_4219.HEIC"
+  "Old CEMDS Building": [
+    "IMG_4206.jpg",
+    "IMG_4213.jpg",
+    "IMG_4216.jpg",
+    "IMG_4217.jpg",
+    "IMG_4219.jpg"
   ],
-  "OSAS": [
-    "IMG_4632.HEIC",
-    "IMG_4639.HEIC",
-    "IMG_4658.HEIC",
-    "IMG_4660.HEIC",
-    "IMG_4661.HEIC"
+  "OSAS Building": [
+    "IMG_4632.jpg",
+    "IMG_4639.jpg",
+    "IMG_4658.jpg",
+    "IMG_4660.jpg",
+    "IMG_4661.jpg"
   ],
-  "Physical Sciences": [
-    "IMG_3993.HEIC",
-    "IMG_4003.HEIC",
-    "IMG_4021.HEIC"
+  "Physical Science Building": [
+    "IMG_3993.jpg",
+    "IMG_4003.jpg",
+    "IMG_4021.jpg"
   ],
-  "Vet Hospital": [
-    "IMG_3820.HEIC",
-    "IMG_3821.HEIC",
-    "IMG_3833.HEIC"
-  ],
+  "Research Center Building": [],
   "University Library": [
     "IMG_5954.JPG",
     "IMG_5955.JPG",
     "IMG_5956.JPG",
     "IMG_5957.JPG"
+  ],
+  "Veterinary Hospital": [
+    "IMG_3820.jpg",
+    "IMG_3821.jpg",
+    "IMG_3833.jpg"
   ]
 }; 

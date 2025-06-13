@@ -8,11 +8,10 @@
 html, body {
   height: 100%;
   width: 100%;
-
 }
 
 body {
-  background: url(University\ Library.jpg) no-repeat center center / cover fixed;
+  background: var(--background-image) no-repeat center center / cover fixed;
 }
 
 .navbar {
@@ -198,7 +197,7 @@ body {
 .vulnerability {
   background-color: #427d9d;
   width: 80%;
-  height: auto;
+  min-height: fit-content;
   padding: 10px;
   border-radius: 50px;
   display: flex;
@@ -251,21 +250,24 @@ body {
 .recommendations {
   background-color: #427d9d;
   width: 80%;
-  height: 70px;
+  min-height: fit-content;
+  padding: 10px;
   border-radius: 50px;
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
   color: white;
-  margin: 1%;
 }
 
-.rvs-descriptions , .location-descriptions , .condition-descriptions , .descriptions{
+.rvs-descriptions, .location-descriptions, .condition-descriptions, .descriptions {
   text-align: center;
+  padding: 10px;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
   font-size: 1.4rem;
-  color: white;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .documentation-container {

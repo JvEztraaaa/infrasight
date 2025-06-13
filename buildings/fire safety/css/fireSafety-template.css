@@ -13,6 +13,7 @@ html, body {
 body {
   position: relative;
   min-height: 100vh;
+  background: var(--background-image) no-repeat center center / cover fixed;
 }
 
 .container {
@@ -270,6 +271,27 @@ td{
   object-fit: cover;
   border-radius: 20px;
   background-color: white;
+}
+
+.features-container, .recommendations-container {
+  background-color: #427d9d;
+  width: 80%;
+  min-height: fit-content;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  color: white;
+}
+
+.feature-descriptions, .recommendation-descriptions {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 /* Responsive Styles */

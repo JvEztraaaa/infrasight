@@ -31,3 +31,10 @@ document.getElementById('fireSafetyCard').onclick = function() {
   const buildingName = params.get('name');
   window.location.href = `../../buildings/fire safety/fireSafety-template.html?name=${encodeURIComponent(buildingName)}`;
 };
+
+// Add click handler for infrastructure audit card
+document.getElementById('infrastructureCard').onclick = function() {
+  const params = new URLSearchParams(window.location.search);
+  const buildingName = params.get('name');
+  window.location.href = `../../buildings/infrastructure audit/infrastructure-template.html?name=${encodeURIComponent(buildingName)}`;
+};

@@ -30,73 +30,47 @@
     <div class="container">
       <div class="layer1">
         <div class="back-panel">
-          <button class="back-btn" onclick="window.location.href='../../overview/overview.html'">Back to General</button>
-
+          <button id="backButton" class="back-btn">Back to General</button>
         </div>
         <div class="header-container">
           <img src="../../others/images/building.png" alt="">
           <h1>Infrastructure Audit</h1>
         </div>
 
-        
         <div class="rvs-container" id="rvs-container">
-          <h1>0.0</h1>
+          <h1></h1>
           <h2>RVS Score</h2>
           <div class="vulnerability">
-            <p class="rvs-descriptions">ADD BUILDING DESCRIPTION</p>
+            <p class="rvs-descriptions"></p>
           </div>
         </div>
         
         <div class="location-container" id="location-container">
           <h1>VULNERABILITY OF BUILDING LOCATION</h1>
           <div class="vulnerability">
-            <p class="location-descriptions">ADD BUILDING VULNERABILITY DESCRIPTION</p>
+            <p class="location-descriptions"></p>
           </div>
         </div>
 
         <div class="condition-container" id="condition-container">
           <h1>PHYSICAL OVER-ALL CONDITIONS</h1>
-          <div class="recommendations">
-            <p class="condition-descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="condition-descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="condition-descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="condition-descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
         </div>
     
         <div class="description-container" id="recommendation-container">
           <h1>RECOMMENDATION</h1>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
         </div>
     
         <div class="documentation-container">
           <h1>DOCUMENTATION PHOTOS</h1>
-    
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
+          <!-- Photos will be dynamically loaded here -->
         </div>
       </div>
     </div>
+
+    <!-- Add necessary scripts -->
+    <script src="../../overview/view_details.js"></script>
+    <script src="infrastructure-data.js"></script>
+    <script src="infrastructure-photos.js"></script>
+    <script src="infrastructure-template.js"></script>
   </body>
 </html>
