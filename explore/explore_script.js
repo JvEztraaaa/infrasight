@@ -22,7 +22,7 @@ L.tileLayer(
 
 // Building markers
 const buildings = [
-  { name: "Engineering Science Building (DIET)",coord: [14.200172, 120.879843],},
+  { name: "Engineering Science Building",coord: [14.200172, 120.879843],},
   { name: "Biological Sciences Building",coord: [14.200405318817777, 120.88250153479166],},
   { name: "Physical Science Building",coord: [14.200005821121971, 120.88290038246578],},
   { name: "Interdisciplinary Research Building",coord: [14.199717037479397, 120.88320898775572],},
