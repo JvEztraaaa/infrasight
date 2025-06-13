@@ -7,9 +7,14 @@ document.getElementById('backButton').onclick = function() {
   window.location.href = `../../overview/overview.html?name=${encodeURIComponent(buildingName)}`;
 };
 
+// Helper function to normalize building names for comparison
+function normalizeBuildingName(name) {
+  return name.toLowerCase().trim().replace(/[()]/g, '');
+}
+
 // Find fire safety data for this building
 const fireData = fireSafetyData.find(
-  b => b.name.toLowerCase().trim() === buildingName?.toLowerCase().trim()
+  b => normalizeBuildingName(b.name) === normalizeBuildingName(buildingName)
 );
 
 // Helper to get icon path
@@ -40,13 +45,14 @@ if (fireData) {
     recContainer.innerHTML = html;
   }
 
-  // Documentation photos (reuse the same logic as accessibility if you want)
+  // Documentation photos
   const docContainer = document.querySelector('.documentation-container');
   if (docContainer) {
     // Clear existing photos
     const docImages = docContainer.querySelectorAll('.doc-img');
     docImages.forEach(img => img.remove());
-    // Use the same documentationPhotos mapping if available
+    
+    // Add new photos
     const photos = documentationPhotos[fireData.name] || [];
     photos.forEach(filename => {
       const imgDiv = document.createElement('div');
@@ -63,7 +69,7 @@ if (fireData) {
 
 // Set background image based on selected building
 const building = buildingData.find(b =>
-  b.name.toLowerCase().trim() === buildingName?.toLowerCase().trim()
+  normalizeBuildingName(b.name) === normalizeBuildingName(buildingName)
 );
 
 if (building) {

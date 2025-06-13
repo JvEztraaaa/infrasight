@@ -49,7 +49,7 @@ const accessibilityData = [
     ]
   },
   {
-    name: "Engineering Building (DIET)",
+    name: "Engineering Building",
     accessibility_features: [
       "PWD ramps",
       "Equipped with the required clear width entrance",
@@ -61,7 +61,7 @@ const accessibilityData = [
     ]
   },
   {
-    name: "College of Information Technology (CEIT)",
+    name: "College of Information and Technology (CEIT)",
     accessibility_features: [
       "Equipped with the required clear width entrance",
       "Headroom clearance is not below 2 meters"
@@ -151,7 +151,7 @@ const accessibilityData = [
     ]
   },
   {
-    name: "Languages and Humanities Building (CAS)",
+    name: "Languages & Humanities Building (CAS)",
     accessibility_features: [
       "PWD ramps with railing",
       "Equipped with the required clear width entrance",

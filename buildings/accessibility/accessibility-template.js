@@ -7,9 +7,14 @@ document.getElementById('backButton').onclick = function() {
   window.location.href = `../../overview/overview.html?name=${encodeURIComponent(buildingName)}`;
 };
 
+// Helper function to normalize building names for comparison
+function normalizeBuildingName(name) {
+  return name.toLowerCase().trim().replace(/[()]/g, '');
+}
+
 // Set background image based on selected building
 const building = buildingData.find(b =>
-  b.name.toLowerCase().trim() === buildingName?.toLowerCase().trim()
+  normalizeBuildingName(b.name) === normalizeBuildingName(buildingName)
 );
 
 if (building) {
@@ -49,7 +54,7 @@ if (building) {
 
   // Load accessibility features and recommendations
   const accessInfo = accessibilityData.find(
-    b => b.name.toLowerCase().trim() === building.name.toLowerCase().trim()
+    b => normalizeBuildingName(b.name) === normalizeBuildingName(building.name)
   );
 
   // Accessibility Features

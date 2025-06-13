@@ -17,7 +17,7 @@ const fireSafetyData = [
     ]
   },
   {
-    name: "College of Information Technology (CEIT)",
+    name: "College of Information and Technology (CEIT)",
     sprinkler: "not required",
     fire_hose_cabinet: "none",
     smoke_detector: "none",
@@ -31,7 +31,7 @@ const fireSafetyData = [
     ]
   },
   {
-    name: "Engineering Building (DIET)",
+    name: "Engineering Building",
     sprinkler: "none",
     fire_hose_cabinet: "yes",
     smoke_detector: "yes",
@@ -62,7 +62,7 @@ const fireSafetyData = [
     ]
   },
   {
-    name: "Languages and Humanities Building (CAS)",
+    name: "Languages & Humanities Building (CAS)",
     sprinkler: "none",
     fire_hose_cabinet: "yes",
     smoke_detector: "none",
@@ -201,8 +201,8 @@ const fireSafetyData = [
     fire_extinguisher: "yes",
     evacuation_plan: "yes",
     recommendations: [
-      "Install smoke detectors",
-      "Update evacuation plan"
+      "Install sprinkler system",
+      "Install smoke detectors"
     ]
   },
   {
