@@ -1,3 +1,11 @@
+// Get building name from URL parameters
+const params = new URLSearchParams(window.location.search);
+const buildingName = params.get('name');
+
+// Update back button to include building name
+document.getElementById('backButton').onclick = function() {
+  window.location.href = `../../overview/overview.html?name=${encodeURIComponent(buildingName)}`;
+};
 
 // Find fire safety data for this building
 const fireData = fireSafetyData.find(
@@ -8,7 +16,7 @@ const fireData = fireSafetyData.find(
 function getIcon(value) {
   if (value === 'yes') return '../../others/images/check.png';
   if (value === 'none') return '../../others/images/wrong.png';
-  if (value === 'not required') return '../../others/images/neutral.png';
+  if (value === 'not required') return '../../others/images/wrong.png';
   return '../../others/images/wrong.png';
 }
 
@@ -53,17 +61,16 @@ if (fireData) {
   }
 }
 
-// Set dynamic background image for the building
-if (typeof buildingData !== 'undefined') {
-  const building = buildingData.find(b =>
-    b.name.toLowerCase().trim() === buildingName?.toLowerCase().trim()
-  );
-  if (building) {
-    const container = document.querySelector('.container');
-    if (container) {
-      // Adjust the path for the fire safety template's location
-      const backgroundImage = building.backgroundImage.replace('../buildings/', '../../buildings/');
-      container.style.backgroundImage = `url('${backgroundImage}')`;
-    }
+// Set background image based on selected building
+const building = buildingData.find(b =>
+  b.name.toLowerCase().trim() === buildingName?.toLowerCase().trim()
+);
+
+if (building) {
+  const container = document.querySelector('.container');
+  if (container) {
+    // Adjust the path for the fire safety template's location
+    const backgroundImage = building.backgroundImage.replace('../buildings/', '../../');
+    container.style.setProperty('--background-image', `url('${backgroundImage}')`);
   }
 } 
