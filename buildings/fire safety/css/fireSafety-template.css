@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background: url(University\ Library.jpg) no-repeat center center / cover fixed;
+  /* Remove any static background-image or background property referencing a specific building image */
 }
 
 .navbar {

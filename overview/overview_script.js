@@ -17,3 +17,10 @@ if (building) {
     container.style.backgroundImage = `url('${building.backgroundImage}')`;
   }
 }
+
+// Add click handler for accessibility card
+document.getElementById('accessibilityCard').onclick = function() {
+  const params = new URLSearchParams(window.location.search);
+  const buildingName = params.get('name');
+  window.location.href = `../../buildings/accessibility/accessibility-template.html?name=${encodeURIComponent(buildingName)}`;
+};

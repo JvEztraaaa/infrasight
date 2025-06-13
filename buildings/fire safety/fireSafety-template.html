@@ -30,8 +30,7 @@
     <div class="container">
       <div class="layer1">
         <div class="back-panel">
-          <button class="back-btn" onclick="window.location.href='../../overview/overview.html'">Back to General</button>
-
+          <button class="back-btn" id="backButton">Back to General</button>
         </div>
         <div class="header-container">
           <img src="../../others/images/fire.png" alt="">
@@ -39,19 +38,19 @@
         </div>
         <!-- Icon kung don't have or meron -->
         <div class="description-container">
-          <table>
+          <table id="fire-safety-table">
             <tr>
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">SPRINKLER</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="sprinkler-img" src="" />
                 </div>
               </td>
               <td></td>
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">FIRE <br />EXTINGUISHER</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="fire-extinguisher-img" src="" />
                 </div>
               </td>
               <td></td>
@@ -60,14 +59,14 @@
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">FIRE HOSE<br />CABINET</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="fire-hose-cabinet-img" src="" />
                 </div>
               </td>
               <td></td>
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">EMERGENCY <br />LIGHT</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="emergency-light-img" src="" />
                 </div>
               </td>
               <td></td>
@@ -76,55 +75,43 @@
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">SMOKE<br />DETECTOR</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="smoke-detector-img" src="" />
                 </div>
               </td>
               <td></td>
               <td>
                 <div class="inspection-container">
                   <p class="inspection-name">FIRE ALARM</p>
-                  <img class="image-container" src="" />
+                  <img class="image-container" id="fire-alarm-img" src="" />
                 </div>
               </td>
               <td></td>
             </tr>
-            <td>
-              <div class="inspection-container">
-                <p class="inspection-name">EVACUATION <br />PLAN</p>
-                <img class="image-container" src="" />
-              </div>
-            </td>
-            <td></td>
+            <tr>
+              <td>
+                <div class="inspection-container">
+                  <p class="inspection-name">EVACUATION <br />PLAN</p>
+                  <img class="image-container" id="evacuation-plan-img" src="" />
+                </div>
+              </td>
+              <td></td>
+            </tr>
           </table>
         </div>
     
         <div class="description-container" id="recommendation-container">
           <h1>RECOMMENDATION</h1>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
-          <div class="recommendations">
-            <p class="descriptions">ADD BUILDING DESCRIPTION</p>
-          </div>
+          <!-- Recommendations will be dynamically loaded here -->
         </div>
     
         <div class="documentation-container">
           <h1>DOCUMENTATION PHOTOS</h1>
-    
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
-          <div class="doc-img"><img src="University Library.jpg" alt="docu" /></div>
+          <!-- Documentation photos will be dynamically loaded here -->
         </div>
       </div>
     </div>
+    <script src="fireSafety-features.js"></script>
+    <script src="../accessibility/accessibility-photos.js"></script>
+    <script src="fireSafety-template.js"></script>
   </body>
 </html>
