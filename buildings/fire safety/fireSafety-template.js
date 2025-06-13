@@ -52,7 +52,7 @@ if (fireData) {
       const imgDiv = document.createElement('div');
       imgDiv.className = 'doc-img';
       const img = document.createElement('img');
-      img.src = `../accessibility/images/${fireData.name}/${filename}`;
+      img.src = `images/${fireData.name}/${filename}`;
       img.alt = `${fireData.name} - Documentation Photo`;
       img.onerror = function() { this.style.display = 'none'; };
       imgDiv.appendChild(img);
@@ -72,5 +72,32 @@ if (building) {
     // Adjust the path for the fire safety template's location
     const backgroundImage = building.backgroundImage.replace('../buildings/', '../../');
     container.style.setProperty('--background-image', `url('${backgroundImage}')`);
+  }
+
+  // Load documentation photos
+  const docContainer = document.querySelector('.documentation-container');
+  if (docContainer) {
+    // Clear existing photos
+    const docImages = docContainer.querySelectorAll('.doc-img');
+    docImages.forEach(img => img.remove());
+
+    // Get the photo filenames for this building
+    const photos = documentationPhotos[building.name] || [];
+    photos.forEach(filename => {
+      const imgDiv = document.createElement('div');
+      imgDiv.className = 'doc-img';
+
+      const img = document.createElement('img');
+      // Use the correct path for fire safety documentation photos
+      img.src = `images/${building.name}/${filename}`;
+      img.alt = `${building.name} - Documentation Photo`;
+
+      img.onerror = function() {
+        this.style.display = 'none';
+      };
+
+      imgDiv.appendChild(img);
+      docContainer.appendChild(imgDiv);
+    });
   }
 } 
