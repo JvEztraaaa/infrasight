@@ -11,4 +11,9 @@ if (building) {
   document.querySelectorAll('.overview-panel .item')[1].querySelector('.value').textContent = building.type;
   document.querySelectorAll('.overview-panel .item')[2].querySelector('.value').textContent = building.occupancy;
   document.querySelectorAll('.overview-panel .item')[3].querySelector('.value').textContent = building.year;
+
+  const container = document.querySelector('.container');
+  if (container) {
+    container.style.backgroundImage = `url('${building.backgroundImage}')`;
+  }
 }

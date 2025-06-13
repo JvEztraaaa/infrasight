@@ -169,6 +169,17 @@ body {
 
 .custom-div-icon {
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.custom-div-icon.selected {
+  filter: drop-shadow(0 0 8px #05b1f5);
+  transform: scale(1.2);
+  z-index: 1000;
+}
+
+.custom-div-icon.selected img {
+  filter: brightness(1.2) hue-rotate(120deg);
 }
 
 .marker-label-container {
@@ -178,15 +189,19 @@ body {
 }
 
 .popup-box {
+  display: flex;
+  flex-direction: column;
   font-family: sans-serif;
   font-size: 13px;
   padding: 5px;
+  gap: 10px;
+  max-width: 300px;
 }
 
-.popup-box h3 {
+.popup-box h2 {
   margin: 0;
   font-size: 15px;
-  color: #333;
+  color: #1b4c63;
   margin-bottom: 5px;
 }
 
@@ -194,6 +209,10 @@ body {
   color: #007bff;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.vulnerability {
+  font-weight: bold;
 }
 
 .leaflet-control-zoom .leaflet-control-zoom-in,

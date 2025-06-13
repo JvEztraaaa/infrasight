@@ -99,7 +99,7 @@ body::before {
   display: flex;
   justify-content: center;
   padding: 80px 40px;
-  background-color: rgba(221, 242, 253, 0.9);
+  background-color: rgba(221, 242, 253, 0.65);
   margin: 8% auto;
   border-radius: 20px;
   border: 2px solid #b0c4de;

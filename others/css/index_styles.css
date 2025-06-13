@@ -26,7 +26,6 @@ main::before {
   height: 100%;
   width: 100%;
   background: url("../images/bg_cavsu.jpg") no-repeat center center / cover;
-  filter: grayscale(100%);
   background-size: cover;
   opacity: 0.75;
   z-index: 1;
@@ -39,7 +38,7 @@ main::after {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgba(221, 242, 253, 0.45);
   z-index: 2;
 }
 
