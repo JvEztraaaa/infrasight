@@ -149,7 +149,7 @@ body {
 
 .description-container , .condition-container {
   display: flex;
-  background-color: rgba(192, 224, 241, 0.781);
+  background-color: rgba(192, 224, 241, 0.9);
   justify-content: center;
   width: 50%;
   border-radius: 45px;
@@ -158,9 +158,9 @@ body {
 
 .rvs-container , .location-container{
   display: flex;
-  background-color: rgba(192, 224, 241, 0.781);
+  background-color: rgba(192, 224, 241, 0.9);
   justify-content: center;
-  padding: 20px;
+  padding: 25px 0;
   gap: 10px;
   width: 50%;
   border-radius: 45px;
@@ -199,6 +199,7 @@ body {
   width: 80%;
   min-height: fit-content;
   padding: 10px;
+  margin-bottom: 20px;
   border-radius: 50px;
   display: flex;
   justify-content: center; 
@@ -271,32 +272,43 @@ body {
 }
 
 .documentation-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  background-color: rgba(192, 224, 241, 0.781);
-  border-radius: 35px;
-  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(192, 224, 241, 0.9);
+  justify-content: center;
   width: 50%;
-  margin: 5% auto;
-  justify-items: center;
-  text-align: center;
+  border-radius: 45px;
+  margin: 4% auto;
+  padding: 2%;
+  align-items: center;
 }
 
 .documentation-container h1 {
-  grid-column: 1 / -1;
-  margin: 2%;
   text-align: center;
-  font-family: Arial;
   font-size: 2.5rem;
+  margin-bottom: 2%;
+  color: #164863;
+}
+
+.doc-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
 }
 
 .doc-img img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
-  border-radius: 20px;
-  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.doc-img img:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive Styles */

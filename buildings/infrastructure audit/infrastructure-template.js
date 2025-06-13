@@ -61,8 +61,16 @@ if (building) {
     });
 
     // Load documentation photos
-    const docImgContainer = document.querySelector('.doc-img');
-    docImgContainer.innerHTML = ''; // Clear existing images
+    const docContainer = document.querySelector('.documentation-container');
+    // Clear existing content except the h1
+    const h1 = docContainer.querySelector('h1');
+    docContainer.innerHTML = '';
+    docContainer.appendChild(h1);
+
+    // Create a container for the images
+    const docImgContainer = document.createElement('div');
+    docImgContainer.className = 'doc-img';
+    docContainer.appendChild(docImgContainer);
 
     // Get the list of images for this building
     const buildingImages = documentationPhotos[buildingName];

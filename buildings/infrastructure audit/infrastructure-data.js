@@ -24,7 +24,7 @@ const infrastructureData = [
     }
   },
   {
-    "name": "Engineering Building (DIET)",
+    "name": "Engineering Building",
     "year_of_construction": 1998,
     "type_of_bldg": "Concrete Frame",
     "storey": 3,

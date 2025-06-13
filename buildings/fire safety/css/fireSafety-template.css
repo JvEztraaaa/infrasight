@@ -168,8 +168,9 @@ body {
 
 .description-container{
   display: flex;
-  background-color: rgba(192, 224, 241, 0.781);
+  background-color: rgba(192, 224, 241, 0.9);
   justify-content: center;
+  padding: 15px 0;
   width: 50%;
   border-radius: 45px;
   margin: auto;
@@ -248,7 +249,7 @@ td{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  background-color: rgba(192, 224, 241, 0.781);
+  background-color: rgba(192, 224, 241, 0.9);
   border-radius: 35px;
   padding: 30px 20px;
   width: 50%;
