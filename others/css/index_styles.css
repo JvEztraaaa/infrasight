@@ -52,6 +52,20 @@ main::after {
   align-items: center;
   text-align: center;
   padding: 20px;
+  ;
+}
+
+.container {
+  height: 70%;
+  width: 50%;
+  background-color: rgba(221, 242, 253, 0.90);
+  border-radius: 20px;
+  border: 2px solid #b0c4de;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {

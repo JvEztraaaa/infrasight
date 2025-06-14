@@ -114,7 +114,9 @@ const accessibilityData = [
   },
   {
     name: "Veterinary Hospital",
-    accessibility_features: [],
+    accessibility_features: [
+      "None"
+    ],
     recommendation: [
       "Replace door knobs with lever type"
     ]

@@ -24,6 +24,7 @@ body {
   background-color: rgba(221, 242, 253, 0.45);
   position: relative;
   z-index: 1;
+  padding-top: 80px;
 }
 
 .container::before {
@@ -48,9 +49,10 @@ body {
   align-items: center;
   padding: 16px 2vw;
   width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .search-box {
@@ -191,17 +193,16 @@ td{
   color: white;
   display: flex;
   flex-direction: row; 
-  justify-content: center;
+  justify-content:  space-between;
   align-items: center;
+  text-align: center;
   width: 300px;
   height: 100px;
   border-radius: 35px;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 60px; 
 }
 
 .inspection-name {
-  margin-bottom: 10px;
   font-size: 1.1rem;
 }
 
@@ -210,7 +211,6 @@ td{
   height: 40px;
   background-color: white; 
   border-radius: 50%;
-  margin-left: 15%;
 }
 
 #recommendation-container{
