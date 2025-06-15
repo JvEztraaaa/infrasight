@@ -4,7 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultBox = document.getElementById("searchResults");
   resultBox.style.display = "none";
 
-  // Building data globally included here
+  // 🔧 Auto-detect the correct relative path to overview.html
+  const currentPath = window.location.pathname;
+  let overviewPath = "";
+
+  if (
+    currentPath.includes("/overview/") ||
+    currentPath.includes("/others/") ||
+    currentPath.includes("/explore/")
+  ) {
+    overviewPath = "../overview/overview.html";
+  } else {
+    overviewPath = "./overview/overview.html";
+  }
+
+  // 🏢 Building data
   const buildingData = [
     {
       name: "Engineering Science Building",
@@ -12,8 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 3,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Engineering Science (ES).JPG",
+      backgroundImage: "/buildings/building-photos/Engineering Science (ES).JPG",
     },
     {
       name: "Biological Sciences Building",
@@ -21,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Biological Sciences.JPG",
+      backgroundImage: "/buildings/building-photos/Biological Sciences.JPG",
     },
     {
       name: "Physical Science Building",
@@ -29,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Physical Science.JPG",
+      backgroundImage: "/buildings/building-photos/Physical Science.JPG",
     },
     {
       name: "Interdisciplinary Research Building",
@@ -37,8 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 7,
       occupancy: "Specialized Facilities",
-      backgroundImage:
-        "../buildings/building-photos/Interdisciplinary Research Building.JPG",
+      backgroundImage: "/buildings/building-photos/Interdisciplinary Research Building.JPG",
     },
     {
       name: "International House 1",
@@ -46,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 4,
       occupancy: "Mixed-Use Buildings",
-      backgroundImage: "../buildings/building-photos/International House 1.JPG",
+      backgroundImage: "/buildings/building-photos/International House 1.JPG",
     },
     {
       name: "College of Information and Technology (CEIT)",
@@ -54,8 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/College of Engineering and Information Technology.JPG",
+      backgroundImage: "/buildings/building-photos/College of Engineering and Information Technology.JPG",
     },
     {
       name: "University Library",
@@ -63,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 6,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/University Library.jpg",
+      backgroundImage: "/buildings/building-photos/University Library.jpg",
     },
     {
       name: "Agricultural Science Building (CAFENR)",
@@ -71,8 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 3,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Agricultural Science (CAFENR).JPG",
+      backgroundImage: "/buildings/building-photos/Agricultural Science (CAFENR).JPG",
     },
     {
       name: "Crop Science Building",
@@ -80,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 3,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Crop Science.JPG",
+      backgroundImage: "/buildings/building-photos/Crop Science.JPG",
     },
     {
       name: "Animal Science Building",
@@ -88,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Animal Science.JPG",
+      backgroundImage: "/buildings/building-photos/Animal Science.JPG",
     },
     {
       name: "Veterinary Medicine Classroom (CVMBS)",
@@ -96,8 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Veterinary Medicine Classroom (CVMBS).JPG",
+      backgroundImage: "/buildings/building-photos/Veterinary Medicine Classroom (CVMBS).JPG",
     },
     {
       name: "Veterinary Hospital",
@@ -105,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Specialized Facilities",
-      backgroundImage: "../buildings/building-photos/Veterinary Hospital.JPG",
+      backgroundImage: "/buildings/building-photos/Veterinary Hospital.JPG",
     },
     {
       name: "Old CEMDS Building",
@@ -113,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Old CEMDS.JPG",
+      backgroundImage: "/buildings/building-photos/Old CEMDS.JPG",
     },
     {
       name: "Human Kinetics Building (Gymnasium)",
@@ -121,8 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Specialized Facilities",
-      backgroundImage:
-        "../buildings/building-photos/Human Kinetics Building (Gymnasium).JPG",
+      backgroundImage: "/buildings/building-photos/Human Kinetics Building (Gymnasium).JPG",
     },
     {
       name: "College of Education",
@@ -130,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/College of Education.JPG",
+      backgroundImage: "/buildings/building-photos/College of Education.JPG",
     },
     {
       name: "Research Center Building",
@@ -138,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Specialized Facilities",
-      backgroundImage: "../buildings/building-photos/Research Center.JPG",
+      backgroundImage: "/buildings/building-photos/Research Center.JPG",
     },
     {
       name: "International House 2",
@@ -146,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 4,
       occupancy: "Mixed-Use Buildings",
-      backgroundImage: "../buildings/building-photos/International House 2.JPG",
+      backgroundImage: "/buildings/building-photos/International House 2.JPG",
     },
     {
       name: "OSAS Building",
@@ -154,8 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Mixed-Use Buildings",
-      backgroundImage:
-        "../buildings/building-photos/Office of the Student Affairs and Services (OSAS).JPG",
+      backgroundImage: "/buildings/building-photos/Office of the Student Affairs and Services (OSAS).JPG",
     },
     {
       name: "ITC Building",
@@ -163,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 5,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/ITC Building.JPG",
+      backgroundImage: "/buildings/building-photos/ITC Building.JPG",
     },
     {
       name: "Languages & Humanities Building (CAS)",
@@ -171,8 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 3,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Languages and Humanities Building (CAS).JPG",
+      backgroundImage: "/buildings/building-photos/Languages and Humanities Building (CAS).JPG",
     },
     {
       name: "College of Criminal Justice (CCJ)",
@@ -180,8 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 4,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/College of Criminal Justice.JPG",
+      backgroundImage: "/buildings/building-photos/College of Criminal Justice.JPG",
     },
     {
       name: "CEMDS Building",
@@ -189,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 5,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/New CEMDS.JPG",
+      backgroundImage: "/buildings/building-photos/New CEMDS.JPG",
     },
     {
       name: "Graduate School & Open Learning College",
@@ -197,8 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Graduate School and Open Learning College.JPG",
+      backgroundImage: "/buildings/building-photos/Graduate School and Open Learning College.JPG",
     },
     {
       name: "Bahay ng Alumni",
@@ -206,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Academic and Office",
-      backgroundImage: "../buildings/building-photos/Bahay ng Alumni.JPG",
+      backgroundImage: "/buildings/building-photos/Bahay ng Alumni.JPG",
     },
     {
       name: "Engineering Building",
@@ -214,8 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 4,
       occupancy: "Academic and Office",
-      backgroundImage:
-        "../buildings/building-photos/Engineering Building (DIET).JPG",
+      backgroundImage: "/buildings/building-photos/Engineering Building (DIET).JPG",
     },
     {
       name: "NCRDEC Building (Coffee Center)",
@@ -223,14 +226,35 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Concrete Frame",
       storeys: 2,
       occupancy: "Specialized Facilities",
-      backgroundImage:
-        "../buildings/building-photos/NCRDEC (Coffee Center).JPG",
+      backgroundImage: "/buildings/building-photos/NCRDEC (Coffee Center).JPG",
     },
   ];
 
-  // Extract only names for quick search
-  const names = buildingData.map((b) => b.name);
+  // Helper to get N random buildings
+  function getRandomBuildings(data, count = 5) {
+    const shuffled = [...data].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  }
 
+  // 📌 Show random buildings when input is focused
+  input.addEventListener("focus", () => {
+    const randomBuildings = getRandomBuildings(buildingData, 5);
+    resultBox.innerHTML = "";
+
+    randomBuildings.forEach((building) => {
+      const item = document.createElement("div");
+      item.classList.add("result-item");
+      item.textContent = building.name;
+      item.addEventListener("click", () => {
+        window.location.href = `${overviewPath}?name=${encodeURIComponent(building.name)}`;
+      });
+      resultBox.appendChild(item);
+    });
+
+    resultBox.style.display = "block";
+  });
+
+  // 🔍 Live search while typing
   input.addEventListener("input", () => {
     const query = input.value.trim().toLowerCase();
     resultBox.innerHTML = "";
@@ -240,16 +264,16 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const matches = names.filter((name) => name.toLowerCase().includes(query));
+    const matches = buildingData
+      .map((b) => b.name)
+      .filter((name) => name.toLowerCase().includes(query));
 
     matches.forEach((name) => {
       const item = document.createElement("div");
       item.classList.add("result-item");
       item.textContent = name;
       item.addEventListener("click", () => {
-        window.location.href = `overview/overview.html?name=${encodeURIComponent(
-          name
-        )}`;
+        window.location.href = `${overviewPath}?name=${encodeURIComponent(name)}`;
       });
       resultBox.appendChild(item);
     });
@@ -257,9 +281,18 @@ document.addEventListener("DOMContentLoaded", () => {
     resultBox.style.display = matches.length ? "block" : "none";
   });
 
+  // Hide result box when clicking outside
   document.addEventListener("click", (e) => {
     if (!container.contains(e.target)) {
       resultBox.style.display = "none";
+    }
+  });
+
+  // Hide result box on Escape key
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      resultBox.style.display = "none";
+      input.blur();
     }
   });
 });
