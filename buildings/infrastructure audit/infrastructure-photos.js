@@ -8,7 +8,7 @@ const documentationPhotos = {
     "20250408_152034.jpg",
     "20250408_152137.jpg",
     "20250408_152453.jpg",
-    "20250408_152805.jpg"
+    "20250408_152805.jpg",
   ],
   "Animal Science Building": [
     "20250421_101257.jpg",
@@ -19,7 +19,7 @@ const documentationPhotos = {
     "20250421_102540.jpg",
     "20250421_102555.jpg",
     "20250421_102623.jpg",
-    "20250421_102825.jpg"
+    "20250421_102825.jpg",
   ],
   "Bahay ng Alumni": [
     "20250428_102659.jpg",
@@ -30,7 +30,7 @@ const documentationPhotos = {
     "20250428_103040.jpg",
     "20250428_103159.jpg",
     "20250428_103247.jpg",
-    "IMG_4580.jpg"
+    "IMG_4580.jpg",
   ],
   "Biological Sciences Building": [
     "20250410_111655.jpg",
@@ -41,7 +41,7 @@ const documentationPhotos = {
     "20250410_112142.jpg",
     "20250410_112314.jpg",
     "20250410_112624.jpg",
-    "20250410_112705.jpg"
+    "20250410_112705.jpg",
   ],
   "CEMDS Building": [
     "20250407_132652.jpg",
@@ -52,7 +52,7 @@ const documentationPhotos = {
     "20250407_134958.jpg",
     "20250407_135003.jpg",
     "20250407_135142.jpg",
-    "20250407_135254.jpg"
+    "20250407_135254.jpg",
   ],
   "College of Criminal Justice (CCJ)": [
     "495047838_996502996010301_870552773265657297_n.jpg",
@@ -63,7 +63,7 @@ const documentationPhotos = {
     "494573838_1241801134334926_5681638128622846940_n.jpg",
     "489730609_698384989459775_5556803492691227471_n.jpg",
     "493063354_700363205782896_1395102010976841856_n.jpg",
-    "489730604_1393869328480874_1579964707129810849_n.jpg"
+    "489730604_1393869328480874_1579964707129810849_n.jpg",
   ],
   "College of Education": [
     "20250410_090449.jpg",
@@ -74,7 +74,7 @@ const documentationPhotos = {
     "20250410_091243.jpg",
     "20250410_091517.jpg",
     "IMG_3944.jpg",
-    "IMG_3946.jpg"
+    "IMG_3946.jpg",
   ],
   "College of Information and Technology (CEIT)": [
     "20250403_133245.jpg",
@@ -85,7 +85,7 @@ const documentationPhotos = {
     "20250404_105144.jpg",
     "20250410_091650.jpg",
     "IMG_3228.jpg",
-    "IMG_3229.jpg"
+    "IMG_3229.jpg",
   ],
   "Crop Science Building": [
     "20250408_153832.jpg",
@@ -96,9 +96,9 @@ const documentationPhotos = {
     "IMG_3881.jpg",
     "IMG_3882.jpg",
     "IMG_3883.jpg",
-    "IMG_3884.jpg"
+    "IMG_3884.jpg",
   ],
-  "CSPEAR": [
+  CSPEAR: [
     "20250407_092238.jpg",
     "20250407_093451.jpg",
     "20250407_093631.jpg",
@@ -107,9 +107,9 @@ const documentationPhotos = {
     "IMG_3659.jpg",
     "IMG_3666.jpg",
     "IMG_3667.jpg",
-    "IMG_3671.jpg"
+    "IMG_3671.jpg",
   ],
-  "DIT": [
+  DIT: [
     "20250403_112856.jpg",
     "20250403_113036.jpg",
     "20250403_113858.jpg",
@@ -119,7 +119,7 @@ const documentationPhotos = {
     "20250403_114919.jpg",
     "20250403_115216.jpg",
     "20250403_115222.jpg",
-    "IMG_3184.jpg"
+    "IMG_3184.jpg",
   ],
   "Engineering Building": [
     "20250403_104812.jpg",
@@ -130,7 +130,7 @@ const documentationPhotos = {
     "20250403_110712.jpg",
     "20250403_112407.jpg",
     "IMG_3155.jpg",
-    "IMG_3170.jpg"
+    "IMG_3170.jpg",
   ],
   "Engineering Science Building": [
     "20250403_085012.jpg",
@@ -141,14 +141,18 @@ const documentationPhotos = {
     "20250403_092506.jpg",
     "20250403_093925.jpg",
     "IMG_3137.jpg",
-    "IMG_3140.jpg"
+    "IMG_3140.jpg",
   ],
   "Graduate School & Open Learning College": [
     "20250408_090644.jpg",
+    "20250408_090703.jpg",
     "20250408_090749.jpg",
+    "20250408_090801.jpg",
+    "20250408_090839.jpg",
     "20250408_091143.jpg",
     "20250408_091335.jpg",
-    "20250408_091345.jpg"
+    "20250408_091345.jpg",
+    "20250408_091818.jpg",
   ],
   "Human Kinetics Building (Gymnasium)": [
     "20250407_092238.jpg",
@@ -159,7 +163,7 @@ const documentationPhotos = {
     "IMG_3659.jpg",
     "IMG_3666.jpg",
     "IMG_3667.jpg",
-    "IMG_3671.jpg"
+    "IMG_3671.jpg",
   ],
   "Interdisciplinary Research Building": [
     "20250421_141220.jpg",
@@ -170,7 +174,7 @@ const documentationPhotos = {
     "20250421_142304.jpg",
     "20250421_142317.jpg",
     "20250421_142451.jpg",
-    "20250421_142500.jpg"
+    "20250421_142500.jpg",
   ],
   "International House 1": [
     "20250428_091219.jpg",
@@ -181,7 +185,7 @@ const documentationPhotos = {
     "IMG_4504.jpg",
     "IMG_4506.jpg",
     "IMG_4516.jpg",
-    "IMG_4530.jpg"
+    "IMG_4530.jpg",
   ],
   "International House 2": [
     "20250428_100046.jpg",
@@ -192,7 +196,7 @@ const documentationPhotos = {
     "20250428_100849.jpg",
     "20250428_100949.jpg",
     "20250428_100959.jpg",
-    "IMG_4567.jpg"
+    "IMG_4567.jpg",
   ],
   "Languages & Humanities Building (CAS)": [
     "20250410_093949.jpg",
@@ -203,7 +207,7 @@ const documentationPhotos = {
     "20250410_095407.jpg",
     "20250410_095438.jpg",
     "20250410_095608.jpg",
-    "IMG_3982.jpg"
+    "IMG_3982.jpg",
   ],
   "NCRDEC Building (Coffee Center)": [
     "20250428_143835.jpg",
@@ -214,30 +218,51 @@ const documentationPhotos = {
     "20250428_145050.jpg",
     "IMG_4610.jpg",
     "IMG_4614.jpg",
-    "IMG_4620.jpg"
+    "IMG_4620.jpg",
   ],
   "Old CEMDS Building": [
     "20250421_083757.jpg",
     "20250421_083802.jpg",
+    "20250421_084040.jpg",
+    "20250421_084223.jpg",
     "20250421_084502.jpg",
+    "20250421_084721.jpg",
     "20250421_084738.jpg",
     "20250421_084947.jpg",
-    "20250421_085229.jpg"
+    "20250421_085229.jpg",
   ],
   "OSAS Building": [
     "20250428_161244.jpg",
     "20250428_161254.jpg",
+    "20250428_162118.jpg",
     "20250428_162128.jpg",
     "20250428_162313.jpg",
-    "20250428_162328.jpg"
+    "20250428_162328.jpg",
+    "20250428_162738.jpg",
+    "20250428_162829.jpg",
+    "20250428_162837.jpg",
   ],
   "Physical Science Building": [
     "20250410_100520.jpg",
+    "20250410_100702.jpg",
+    "20250410_100803.jpg",
+    "20250410_100935.jpg",
+    "20250410_101149.jpg",
+    "20250410_101243.jpg",
     "20250410_101925.jpg",
-    "20250410_111023.jpg"
+    "20250410_111023.jpg",
+    "IMG_4005.jpg",
   ],
   "Research Center Building": [
-    "20250421_143615.jpg"
+    "20250421_143104.jpg",
+    "20250421_143113.jpg",
+    "20250421_143141.jpg",
+    "20250421_143159.jpg",
+    "20250421_143232.jpg",
+    "20250421_143246.jpg",
+    "20250421_143615.jpg",
+    "20250421_143957.jpg",
+    "20250421_144030.jpg"
   ],
   "University Library": [
     "20250331_124855.jpg",
@@ -248,7 +273,7 @@ const documentationPhotos = {
     "IMG_2996.jpg",
     "IMG_2998.jpg",
     "IMG_3013.jpg",
-    "IMG_3025.jpg"
+    "IMG_3025.jpg",
   ],
   "Veterinary Hospital": [
     "20250408_135507.jpg",
@@ -259,7 +284,7 @@ const documentationPhotos = {
     "20250408_140418.jpg",
     "20250408_140512.jpg",
     "20250408_140750.jpg",
-    "20250408_140908.jpg"
+    "20250408_140908.jpg",
   ],
   "Veterinary Medicine Classroom (CVMBS)": [
     "20250408_133250.jpg",
@@ -270,6 +295,6 @@ const documentationPhotos = {
     "20250408_134634.jpg",
     "20250408_134733.jpg",
     "20250408_134743.jpg",
-    "IMG_3817.jpg"
-  ]
+    "IMG_3817.jpg",
+  ],
 };
