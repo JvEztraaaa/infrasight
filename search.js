@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPath.includes("/explore/")
   ) {
     overviewPath = "../overview/overview.html";
+  } else if (
+    currentPath.includes("/buildings/accessibility/") ||
+    currentPath.includes("/buildings/fire%20safety/") ||
+    currentPath.includes("/buildings/infrastructure%20audit/")
+  ) {
+    overviewPath = "../../overview/overview.html";
   } else {
     overviewPath = "./overview/overview.html";
   }
