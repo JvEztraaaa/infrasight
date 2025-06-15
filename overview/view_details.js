@@ -5,7 +5,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 3,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Engineering Science (ES).jpg"
+    backgroundImage: "../buildings/building-photos/Engineering Science (ES).JPG"
   },
   {
     name: "Biological Sciences Building",
@@ -13,7 +13,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Biological Sciences.jpg"
+    backgroundImage: "../buildings/building-photos/Biological Sciences.JPG"
   },
   {
     name: "Physical Science Building",
@@ -21,7 +21,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Physical Science.jpg"
+    backgroundImage: "../buildings/building-photos/Physical Science.JPG"
   },
   {
     name: "Interdisciplinary Research Building",
@@ -29,7 +29,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 7,
     occupancy: "Specialized Facilities",
-    backgroundImage: "../buildings/building-photos/Interdisciplinary Research Building.jpg"
+    backgroundImage: "../buildings/building-photos/Interdisciplinary Research Building.JPG"
   },
   {
     name: "International House 1",
@@ -37,7 +37,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 4,
     occupancy: "Mixed-Use Buildings",
-    backgroundImage: "../buildings/building-photos/International House 1.jpg"
+    backgroundImage: "../buildings/building-photos/International House 1.JPG"
   },
   {
     name: "College of Information and Technology (CEIT)",
@@ -45,7 +45,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/College of Engineering and Information Technology.jpg"
+    backgroundImage: "../buildings/building-photos/College of Engineering and Information Technology.JPG"
   },
   {
     name: "University Library",
@@ -61,7 +61,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 3,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Agricultural Science (CAFENR).jpg"
+    backgroundImage: "../buildings/building-photos/Agricultural Science (CAFENR).JPG"
   },
   {
     name: "Crop Science Building",
@@ -69,7 +69,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 3,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Crop Science.jpg"
+    backgroundImage: "../buildings/building-photos/Crop Science.JPG"
   },
   {
     name: "Animal Science Building",
@@ -77,7 +77,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Animal Science.jpg"
+    backgroundImage: "../buildings/building-photos/Animal Science.JPG"
   },
   {
     name: "Veterinary Medicine Classroom (CVMBS)",
@@ -85,7 +85,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Veterinary Medicine Classroom (CVMBS).jpg"
+    backgroundImage: "../buildings/building-photos/Veterinary Medicine Classroom (CVMBS).JPG"
   },
   {
     name: "Veterinary Hospital",
@@ -93,7 +93,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Specialized Facilities",
-    backgroundImage: "../buildings/building-photos/Veterinary Hospital.jpg"
+    backgroundImage: "../buildings/building-photos/Veterinary Hospital.JPG"
   },
   {
     name: "Old CEMDS Building",
@@ -101,7 +101,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Old CEMDS.jpg"
+    backgroundImage: "../buildings/building-photos/Old CEMDS.JPG"
   },
   {
     name: "Human Kinetics Building (Gymnasium)",
@@ -109,7 +109,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Specialized Facilities",
-    backgroundImage: "../buildings/building-photos/Human Kinetics Building (Gymnasium).jpg"
+    backgroundImage: "../buildings/building-photos/Human Kinetics Building (Gymnasium).JPG"
   },
   {
     name: "College of Education",
@@ -117,7 +117,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/College of Education.jpg"
+    backgroundImage: "../buildings/building-photos/College of Education.JPG"
   },
   {
     name: "Research Center Building",
@@ -125,7 +125,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Specialized Facilities",
-    backgroundImage: "../buildings/building-photos/Research Center.jpg"
+    backgroundImage: "../buildings/building-photos/Research Center.JPG"
   },
   {
     name: "International House 2",
@@ -133,7 +133,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 4,
     occupancy: "Mixed-Use Buildings",
-    backgroundImage: "../buildings/building-photos/International House 2.jpg"
+    backgroundImage: "../buildings/building-photos/International House 2.JPG"
   },
   {
     name: "OSAS Building",
@@ -141,7 +141,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Mixed-Use Buildings",
-    backgroundImage: "../buildings/building-photos/Office of the Student Affairs and Services (OSAS).jpg"
+    backgroundImage: "../buildings/building-photos/Office of the Student Affairs and Services (OSAS).JPG"
   },
   {
     name: "ITC Building",
@@ -149,7 +149,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 5,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/ITC Building.jpg"
+    backgroundImage: "../buildings/building-photos/ITC Building.JPG"
   },
   {
     name: "Languages & Humanities Building (CAS)",
@@ -157,7 +157,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 3,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Languages and Humanities Building (CAS).jpg"
+    backgroundImage: "../buildings/building-photos/Languages and Humanities Building (CAS).JPG"
   },
   {
     name: "College of Criminal Justice (CCJ)",
@@ -165,7 +165,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 4,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/College of Criminal Justice.jpg"
+    backgroundImage: "../buildings/building-photos/College of Criminal Justice.JPG"
   },
   {
     name: "CEMDS Building",
@@ -173,7 +173,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 5,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/New CEMDS.jpg"
+    backgroundImage: "../buildings/building-photos/New CEMDS.JPG"
   },
   {
     name: "Graduate School & Open Learning College",
@@ -181,7 +181,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Graduate School and Open Learning College.jpg"
+    backgroundImage: "../buildings/building-photos/Graduate School and Open Learning College.JPG"
   },
   {
     name: "Bahay ng Alumni",
@@ -189,7 +189,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Bahay ng Alumni.jpg"
+    backgroundImage: "../buildings/building-photos/Bahay ng Alumni.JPG"
   },
   {
     name: "Engineering Building",
@@ -197,7 +197,7 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 4,
     occupancy: "Academic and Office",
-    backgroundImage: "../buildings/building-photos/Engineering Building (DIET).jpg"
+    backgroundImage: "../buildings/building-photos/Engineering Building (DIET).JPG"
   },
   {
     name: "NCRDEC Building (Coffee Center)",
@@ -205,6 +205,6 @@ const buildingData = [
     type: "Concrete Frame",
     storeys: 2,
     occupancy: "Specialized Facilities",
-    backgroundImage: "../buildings/building-photos/NCRDEC (Coffee Center).jpg"
+    backgroundImage: "../buildings/building-photos/NCRDEC (Coffee Center).JPG"
   }
 ];
