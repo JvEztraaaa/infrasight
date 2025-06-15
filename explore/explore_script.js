@@ -31,7 +31,7 @@ const buildings = [
   { name: "University Library",coord: [14.199322573051465, 120.88234524368683], vulnerability: "Vulnerable to Earthquake"},
   { name: "Agricultural Science Building (CAFENR)",coord: [14.199086203513206, 120.88277033438736], vulnerability: "Vulnerable to Earthquake"},
   { name: "Crop Science Building", coord: [14.198955, 120.882381] , vulnerability: "Vulnerable to Earthquake"},
-  { name: "Animal Science Building",coord: [14.2027737,120.8820042],},
+  { name: "Animal Science Building",coord: [14.2027737,120.8820042], vulnerability: "Vulnerable to Earthquake"},
   { name: "Veterinary Medicine Classroom (CVMBS)",coord: [14.202646874698718, 120.88185012363537], vulnerability: "Vulnerable to Earthquake"},
   { name: "Veterinary Hospital",coord: [14.2028316,120.8815563], vulnerability: "Vulnerable to Earthquake"},
   { name: "Old CEMDS Building", coord: [14.1999226,120.8813103] , vulnerability: "Vulnerable to Earthquake"},
