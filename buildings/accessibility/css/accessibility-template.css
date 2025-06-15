@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -77,7 +78,7 @@ body {
   border-bottom: 2px solid white;
 }
 
-.icon{
+.icon {
   width: 8%;
 }
 
@@ -124,8 +125,8 @@ body {
   background-color: #eee;
 }
 
-.back-button:active{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+.back-button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -147,11 +148,11 @@ body {
 .header-container img {
   width: 50px;
   height: 50px;
-  object-fit: contain; 
+  object-fit: contain;
   vertical-align: middle;
 }
 
-.description-container{
+.description-container {
   display: flex;
   background-color: rgba(192, 224, 241, 0.9);
   justify-content: center;
@@ -160,12 +161,12 @@ body {
   margin: auto;
 }
 
-table{
+table {
   border-collapse: separate;
   border-spacing: 20px;
 }
 
-td{
+td {
   color: white;
   font-weight: bold;
 }
@@ -174,7 +175,7 @@ td{
   background-color: #427d9d;
   color: white;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 300px;
@@ -192,18 +193,18 @@ td{
 .image-container {
   width: 40px;
   height: 40px;
-  background-color: white; 
+  background-color: white;
   border-radius: 50%;
   margin-left: 15%;
 }
 
-#recommendation-container{
+#recommendation-container {
   margin-top: 5%;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2%;
 }
-#recommendation-container h1{
+#recommendation-container h1 {
   margin: 4.5%;
   text-align: center;
   font-family: Arial;
@@ -215,8 +216,8 @@ td{
   height: 70px;
   border-radius: 50px;
   display: flex;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
   color: white;
   margin: 1%;
@@ -254,8 +255,13 @@ td{
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 20px;
-  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.doc-img img:hover {
+  transform: scale(1.05);
 }
 
 /* Responsive Styles */
@@ -355,7 +361,8 @@ td{
   }
 }
 
-.features-container, .recommendations-container {
+.features-container,
+.recommendations-container {
   background-color: #427d9d;
   width: 80%;
   min-height: fit-content;
@@ -368,7 +375,8 @@ td{
   color: white;
 }
 
-.feature-descriptions, .recommendation-descriptions {
+.feature-descriptions,
+.recommendation-descriptions {
   text-align: center;
   padding: 10px;
   width: 100%;
