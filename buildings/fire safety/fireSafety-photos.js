@@ -17,12 +17,12 @@ const documentationPhotos = {
     "IMG_3963.jpg"
   ],
   "College of Information and Technology (CEIT)": [
-    "IMG_3226.jpg",
+    "IMG_3219.jpg",
+    "IMG_3220.jpg",
     "IMG_3227.jpg",
     "IMG_3235.jpg",
     "IMG_3236.jpg",
-    "IMG_3219.jpg",
-    "IMG_3220.jpg"
+    "IMG_3226.jpg"
   ],
   "Veterinary Medicine Classroom (CVMBS)": [
     "IMG_3808.jpg",

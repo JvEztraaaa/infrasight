@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
 }
@@ -191,7 +190,7 @@ body {
 .header-container img {
   width: 50px;
   height: 50px;
-  object-fit: contain;
+  object-fit: contain; 
   vertical-align: middle;
 }
 
@@ -219,7 +218,7 @@ td {
   background-color: #427d9d;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -236,7 +235,7 @@ td {
 .image-container {
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: white; 
   border-radius: 50%;
 }
 
@@ -258,8 +257,8 @@ td {
   height: 70px;
   border-radius: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center;    
   font-family: Arial, sans-serif;
   color: white;
   margin: 1%;

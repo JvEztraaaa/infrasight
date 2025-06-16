@@ -56,12 +56,13 @@ main::after {
 }
 
 .container {
-  height: 70%;
-  width: 50%;
+  height: 50%;
+  width: 40%;
   background-color: rgba(221, 242, 253, 0.90);
   border-radius: 20px;
   border: 2px solid #b0c4de;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  gap: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,7 +146,7 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.7rem;
   transition: background-color 0.3s ease;
 }
 

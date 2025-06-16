@@ -77,8 +77,12 @@ if (building) {
     if (buildingImages) {
       buildingImages.forEach(filename => {
         const img = document.createElement('img');
-        img.src = `images/${buildingName}/${filename}`;
+        // Use encodeURIComponent to handle spaces and special characters in paths
+        img.src = `images/${encodeURIComponent(buildingName)}/${encodeURIComponent(filename)}`;
         img.alt = `Documentation photo for ${buildingName}`;
+        img.onerror = function() {
+          this.style.display = 'none';
+        };
         docImgContainer.appendChild(img);
       });
     }
