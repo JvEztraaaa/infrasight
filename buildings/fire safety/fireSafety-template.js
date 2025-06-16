@@ -44,6 +44,27 @@ if (fireData) {
     });
     recContainer.innerHTML = html;
   }
+
+  // Documentation photos
+  const docContainer = document.querySelector('.documentation-container');
+  if (docContainer) {
+    // Clear existing photos
+    const docImages = docContainer.querySelectorAll('.doc-img');
+    docImages.forEach(img => img.remove());
+    
+    // Add new photos
+    const photos = documentationPhotos[fireData.name] || [];
+    photos.forEach(filename => {
+      const imgDiv = document.createElement('div');
+      imgDiv.className = 'doc-img';
+      const img = document.createElement('img');
+      img.src = `images/${fireData.name}/${filename}`;
+      img.alt = `${fireData.name} - Documentation Photo`;
+      img.onerror = function() { this.style.display = 'none'; };
+      imgDiv.appendChild(img);
+      docContainer.appendChild(imgDiv);
+    });
+  }
 }
 
 // Set background image based on selected building
@@ -67,14 +88,12 @@ if (building) {
     docContainer.innerHTML = '';
     docContainer.appendChild(h1);
 
-    // Create a container for the images
-    const docImgContainer = document.createElement('div');
-    docImgContainer.className = 'doc-img';
-    docContainer.appendChild(docImgContainer);
-
     // Get the photo filenames for this building
     const photos = documentationPhotos[building.name] || [];
     photos.forEach(filename => {
+      const imgDiv = document.createElement('div');
+      imgDiv.className = 'doc-img';
+
       const img = document.createElement('img');
       // Use encodeURIComponent to handle spaces and special characters
       img.src = `images/${encodeURIComponent(building.name)}/${encodeURIComponent(filename)}`;
@@ -82,7 +101,9 @@ if (building) {
       img.onerror = function() {
         this.style.display = 'none';
       };
-      docImgContainer.appendChild(img);
+
+      imgDiv.appendChild(img);
+      docContainer.appendChild(imgDiv);
     });
   }
 } 
